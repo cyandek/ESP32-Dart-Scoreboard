@@ -1,0 +1,508 @@
+<!DOCTYPE HTML><html lang=en-EN>
+<head>
+<title>Inputs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body> 
+
+<div>
+    <h3 id="CurrentPlayer">Current Player: Caleb</h3>
+</div>
+
+<div class= "input-grid-container">
+    <!-- Input section -->
+
+<div class= "input">
+    <p>Inputs</p>
+<p>
+
+<!-- Choose game to play -->
+
+        Game:<select class ="Dropdown" onchange ="UpdateGame()" name="CurrentGame" id="CurrentGame">
+        <option value="Select Game">Select Game to Play</option value>
+        <option value="301">301</option value>
+        <option value="301 Double out">301 Double out</option value>
+        <option value="401">401</option value>
+        <option value="501">501</option value>
+        <option value="Cricket">Cricket</option value>
+        <option value="Cricket With Points">Cricket With Points</option value>
+        <option value="Golf">Golf</option value>
+        <option value="Killer">Killer</option value>
+        <option value="Around The World">Around The World</option value>
+	</select>
+    <br>
+
+<!-- Input number of players -->
+   Players:<select class ="Dropdown" onchange="UpdatePlayers()" id="Numplayers">
+        <option value=" "> </option value>
+        <option value="1">1</option value>
+        <option value="2">2</option value>
+        <option value="3">3</option value>
+        <option value="4">4</option value>
+        <option value="5">5</option value>
+        <option value="6">6</option value>
+        <option value="7">7</option value>
+        <option value="8">8</option value>
+    </select>
+    <br>
+</p>
+
+<!-- Change current player -->
+
+    <button class ="Inputbuttons" name ="Next Player" onclick ="NextPlayer()" value = "Next Player">Next Player</button> 
+    <p>   </p>
+    <button class ="Inputbuttons" name ="Prev Player" onclick ="PrevPlayer()" value = "Prev Player">Prev Player</button>
+    <p>   </p>
+    <button class ="Inputbuttons" name ="Reset" onclick ="Reset()" value = "Reset">Reset</button>
+    <br>
+    <br>
+
+<label class= "P1label" id="P1label">Player 1:</label>
+    <select class ="P1dropdown" onchange="P1nameUpdate()" name="P1name" id="P1name">
+        <option value="Caleb">Caleb</option value>
+        <option value="Ana">Ana</option value>
+        <option value="Adam">Adam</option value>
+        <option value="Anastasia">Anastasia</option value>
+        <option value="Casey">Casey</option value>
+        <option value="Conor">Conor</option value>
+        <option value="Dad">Dad</option value>
+        <option value="David">David</option value>
+        <option value="Devin">Devin</option value>
+        <option value="DJ">DJ</option value>
+        <option value="Dylan">Dylan</option value>
+        <option value="Elisa">Elisa</option value>
+        <option value="Gabbi">Gabbi</option value>    
+        <option value="Gabriel">Gabriel</option value>
+        <option value="Jubilee">Jubilee</option value>
+        <option value="Justin">Justin</option value>
+        <option value="Lennon">Lennon</option value>
+        <option value="Linzi">Linzi</option value>
+        <option value="Luca">Luca</option value>
+        <option value="Mary">Mary</option value>
+        <option value="Matt">Matt</option value>
+        <option value="Mom">Mom</option value>
+        <option value="Natalie">Natalie</option value>
+        <option value="Nate">Nate</option value>
+        <option value="Nick">Nick</option value>
+        <option value="Patrick">Patrick</option value>
+        <option value="Payton">Payton</option value>
+        <option value="Rachel">Rachel</option value>
+        <option value="Trevor">Trevor</option value>
+        </select>
+<p></p>
+        <label class= "P2label" id="P2label">Player 2:</label>
+    
+    <select class ="P2dropdown" onchange="P2nameUpdate()" name="P2name" id="P2name">
+        <option value="Ana">Ana</option value>
+        <option value="Adam">Adam</option value>
+        <option value="Anastasia">Anastasia</option value>
+        <option value="Caleb">Caleb</option value>
+        <option value="Casey">Casey</option value>
+        <option value="Conor">Conor</option value>
+        <option value="Dad">Dad</option value>
+        <option value="David">David</option value>
+        <option value="Devin">Devin</option value>
+        <option value="Elisa">Elisa</option value>
+        <option value="DJ">DJ</option value>
+        <option value="Dylan">Dylan</option value>
+        <option value="Gabbi">Gabbi</option value> 
+        <option value="Gabriel">Gabriel</option value>
+        <option value="Jubilee">Jubilee</option value>
+        <option value="Justin">Justin</option value>
+        <option value="Lennon">Lennon</option value>
+        <option value="Linzi">Linzi</option value>
+        <option value="Luca">Luca</option value>
+        <option value="Mary">Mary</option value>
+        <option value="Matt">Matt</option value>
+        <option value="Mom">Mom</option value>
+        <option value="Natalie">Natalie</option value>
+        <option value="Nate">Nate</option value>
+        <option value="Nick">Nick</option value>
+        <option value="Patrick">Patrick</option value>
+        <option value="Payton">Payton</option value>
+        <option value="Rachel">Rachel</option value>
+        <option value="Trevor">Trevor</option value>
+        </select>
+<p></p>
+        <label class= "P3label" id="P3label">Player 3:</label>
+    
+    <select class ="P3dropdown" onchange="P3nameUpdate()" name="P3name" id="P3name">
+        <option value="Adam">Adam</option value>
+        <option value="Ana">Ana</option value>
+        <option value="Anastasia">Anastasia</option value>
+        <option value="Caleb">Caleb</option value>
+        <option value="Casey">Casey</option value>
+        <option value="Conor">Conor</option value>
+        <option value="Dad">Dad</option value>
+        <option value="David">David</option value>
+        <option value="Devin">Devin</option value>
+        <option value="DJ">DJ</option value>
+        <option value="Dylan">Dylan</option value>
+        <option value="Elisa">Elisa</option value>
+        <option value="Gabbi">Gabbi</option value> 
+        <option value="Gabriel">Gabriel</option value>
+        <option value="Jubilee">Jubilee</option value>
+        <option value="Justin">Justin</option value>
+        <option value="Lennon">Lennon</option value>
+        <option value="Linzi">Linzi</option value>
+        <option value="Luca">Luca</option value>
+        <option value="Mary">Mary</option value>
+        <option value="Matt">Matt</option value>
+        <option value="Mom">Mom</option value>
+        <option value="Natalie">Natalie</option value>
+        <option value="Nate">Nate</option value>
+        <option value="Nick">Nick</option value>
+        <option value="Patrick">Patrick</option value>
+        <option value="Payton">Payton</option value>
+        <option value="Rachel">Rachel</option value>
+        <option value="Trevor">Trevor</option value>
+        </select>
+<p></p>
+        <label class= "P4label" id="P4label">Player 4:</label>
+    
+    <select class ="P4dropdown" onchange="P4nameUpdate()" name="P4name" id="P4name">
+        <option value="Anastasia">Anastasia</option value>
+        <option value="Adam">Adam</option value>
+        <option value="Ana">Ana</option value>
+        <option value="Caleb">Caleb</option value>
+        <option value="Casey">Casey</option value>
+        <option value="Conor">Conor</option value>
+        <option value="Dad">Dad</option value>
+        <option value="David">David</option value>
+        <option value="Devin">Devin</option value>
+        <option value="DJ">DJ</option value>
+        <option value="Dylan">Dylan</option value>
+        <option value="Elisa">Elisa</option value>
+        <option value="Gabbi">Gabbi</option value> 
+        <option value="Gabriel">Gabriel</option value>
+        <option value="Jubilee">Jubilee</option value>
+        <option value="Justin">Justin</option value>
+        <option value="Lennon">Lennon</option value>
+        <option value="Linzi">Linzi</option value>
+        <option value="Luca">Luca</option value>
+        <option value="Mary">Mary</option value>
+        <option value="Matt">Matt</option value>
+        <option value="Mom">Mom</option value>
+        <option value="Natalie">Natalie</option value>
+        <option value="Nate">Nate</option value>
+        <option value="Nick">Nick</option value>
+        <option value="Patrick">Patrick</option value>
+        <option value="Payton">Payton</option value>
+        <option value="Rachel">Rachel</option value>
+        <option value="Trevor">Trevor</option value>
+        </select>
+<p></p>
+        <label class= "P5label" id="P5label">Player 5:</label>
+    
+    <select class ="P5dropdown" onchange="P5nameUpdate()" name="P5name" id="P5name">
+        <option value="Casey">Casey</option value>
+        <option value="Adam">Adam</option value>
+        <option value="Ana">Ana</option value>
+        <option value="Anastasia">Anastasia</option value>
+        <option value="Caleb">Caleb</option value>
+        <option value="Casey">Casey</option value>
+        <option value="Conor">Conor</option value>
+        <option value="Dad">Dad</option value>
+        <option value="David">David</option value>
+        <option value="Devin">Devin</option value>
+        <option value="DJ">DJ</option value>
+        <option value="Dylan">Dylan</option value>
+        <option value="Elisa">Elisa</option value>
+        <option value="Gabbi">Gabbi</option value> 
+        <option value="Gabriel">Gabriel</option value>
+        <option value="Jubilee">Jubilee</option value>
+        <option value="Justin">Justin</option value>
+        <option value="Lennon">Lennon</option value>
+        <option value="Linzi">Linzi</option value>
+        <option value="Luca">Luca</option value>
+        <option value="Mary">Mary</option value>
+        <option value="Matt">Matt</option value>
+        <option value="Mom">Mom</option value>
+        <option value="Natalie">Natalie</option value>
+        <option value="Nate">Nate</option value>
+        <option value="Nick">Nick</option value>
+        <option value="Patrick">Patrick</option value>
+        <option value="Payton">Payton</option value>
+        <option value="Rachel">Rachel</option value>
+        <option value="Trevor">Trevor</option value>
+        </select>
+<p></p>
+        <label class= "P6label" id="P6label">Player 6:</label>
+    
+    <select class ="P6dropdown" onchange="P6nameUpdate()" name="P6name" id="P6name">
+        
+        <option value="Conor">Conor</option value>
+        <option value="Adam">Adam</option value>
+        <option value="Ana">Ana</option value>
+        <option value="Anastasia">Anastasia</option value>
+        <option value="Caleb">Caleb</option value>
+        <option value="Casey">Casey</option value>
+        <option value="Dad">Dad</option value>
+        <option value="David">David</option value>
+        <option value="Devin">Devin</option value>
+        <option value="DJ">DJ</option value>
+        <option value="Dylan">Dylan</option value>
+        <option value="Elisa">Elisa</option value>
+        <option value="Gabbi">Gabbi</option value> 
+        <option value="Gabriel">Gabriel</option value>
+        <option value="Jubilee">Jubilee</option value>
+        <option value="Justin">Justin</option value>
+        <option value="Lennon">Lennon</option value>
+        <option value="Linzi">Linzi</option value>
+        <option value="Luca">Luca</option value>
+        <option value="Mary">Mary</option value>
+        <option value="Matt">Matt</option value>
+        <option value="Mom">Mom</option value>
+        <option value="Natalie">Natalie</option value>
+        <option value="Nate">Nate</option value>
+        <option value="Nick">Nick</option value>
+        <option value="Patrick">Patrick</option value>
+        <option value="Payton">Payton</option value>
+        <option value="Rachel">Rachel</option value>
+        <option value="Trevor">Trevor</option value>
+        </select>
+<p></p>
+        <label class= "P7label" id="P7label">Player 7:</label>
+    
+    <select class ="P7dropdown" onchange="P7nameUpdate()" name="P7name" id="P7name">
+      <option value="Dad">Dad</option value>  
+        <option value="Adam">Adam</option value>
+        <option value="Ana">Ana</option value>
+        <option value="Anastasia">Anastasia</option value>
+        <option value="Caleb">Caleb</option value>
+        <option value="Casey">Casey</option value>
+        <option value="Conor">Conor</option value>
+        <option value="David">David</option value>
+        <option value="Devin">Devin</option value>
+        <option value="DJ">DJ</option value>
+        <option value="Dylan">Dylan</option value>
+        <option value="Elisa">Elisa</option value>
+        <option value="Gabbi">Gabbi</option value> 
+        <option value="Gabriel">Gabriel</option value>
+        <option value="Jubilee">Jubilee</option value>
+        <option value="Justin">Justin</option value>
+        <option value="Lennon">Lennon</option value>
+        <option value="Linzi">Linzi</option value>
+        <option value="Luca">Luca</option value>
+        <option value="Mary">Mary</option value>
+        <option value="Matt">Matt</option value>
+        <option value="Mom">Mom</option value>
+        <option value="Natalie">Natalie</option value>
+        <option value="Nate">Nate</option value>
+        <option value="Nick">Nick</option value>
+        <option value="Patrick">Patrick</option value>
+        <option value="Payton">Payton</option value>
+        <option value="Rachel">Rachel</option value>
+        <option value="Trevor">Trevor</option value>
+        </select>
+<p></p>
+        <label class= "P8label" id="P8label">Player 8:</label>
+    
+    <select class ="P8dropdown" onchange="P8nameUpdate()" name="P8name" id="P8name">
+        <option value="David">David</option value>
+        <option value="Adam">Adam</option value>
+        <option value="Ana">Ana</option value>
+        <option value="Anastasia">Anastasia</option value>
+        <option value="Caleb">Caleb</option value>
+        <option value="Casey">Casey</option value>
+        <option value="Conor">Conor</option value>
+        <option value="Dad">Dad</option value>
+        <option value="Devin">Devin</option value>
+        <option value="DJ">DJ</option value>
+        <option value="Dylan">Dylan</option value>
+        <option value="Elisa">Elisa</option value>
+        <option value="Gabbi">Gabbi</option value> 
+        <option value="Gabriel">Gabriel</option value>
+        <option value="Jubilee">Jubilee</option value>
+        <option value="Justin">Justin</option value>
+        <option value="Lennon">Lennon</option value>
+        <option value="Linzi">Linzi</option value>
+        <option value="Luca">Luca</option value>
+        <option value="Mary">Mary</option value>
+        <option value="Matt">Matt</option value>
+        <option value="Mom">Mom</option value>
+        <option value="Natalie">Natalie</option value>
+        <option value="Nate">Nate</option value>
+        <option value="Nick">Nick</option value>
+        <option value="Patrick">Patrick</option value>
+        <option value="Payton">Payton</option value>
+        <option value="Rachel">Rachel</option value>
+        <option value="Trevor">Trevor</option value>
+        </select>
+</div>
+
+<!-- Dart 1 -->
+ <div class= "Dart1" id="Dart1">
+    <p class = "D1header" id="Dart1header">Dart 1:</p>
+    <hr></hr>
+<form>
+  <input type="radio" onclick = "D1ScoreUpdate()" id="D1x1" name="D1Multiplier" value=1 checked="checked">
+  <label class="D1x1" for="D1x1">Single</label><br>
+  <input type="radio" onclick = "D1ScoreUpdate()" id="D1x2" name="D1Multiplier" value=2>
+  <label class="D1x2" for="D1x2">Double</label><br>
+  <input type="radio" onclick = "D1ScoreUpdate()" id="D1x3" name="D1Multiplier" value="3">
+  <label class="D1x3" for="D1x3">Triple</label><br>
+  <input type="radio" onclick = "D1ScoreUpdate()" id="D1x-1" name="D1Multiplier" value="-1">
+  <label class="D1x-1" for="D1x-1">Remove</label><br>
+
+</form>
+<br>
+    <button class="Bull1" onclick="D1UpdateScoresBull()" name ="score" id="D1-Bull" value = "25">Bull</button>
+    <button class="D1-20" onclick="D1UpdateScores20()" name ="score" id="D1-20" value = "20">20</button> 
+    <button class="D1-19" onclick="D1UpdateScores19()" name ="score" id="D1-19" value = "19">19</button> 
+    <br>
+    <br>
+    <button class="D1-18" onclick="D1UpdateScores18()" name ="score" id="D1-18" value = "18">18</button>
+    <button class="D1-17" onclick="D1UpdateScores17()" name ="score" id="D1-17" value = "17">17</button>
+    <button class="D1-16" onclick="D1UpdateScores16()" name ="score" id="D1-16" value = "16">16</button>
+    <br>
+    <br>
+    <button class="D1-15" onclick="D1UpdateScores15()" name ="score" id="D1-15" value = "15">15</button>
+    <button class="D1-14" onclick="D1UpdateScores14()" name ="score" id="D1-14" value = "14">14</button>
+    <button class="D1-13" onclick="D1UpdateScores13()" name ="score" id="D1-13" value = "13">13</button>
+    <br>
+    <br>
+    <button class="D1-12" onclick="D1UpdateScores12()" name ="score" id="D1-12" value = "12">12</button>
+    <button class="D1-11" onclick="D1UpdateScores11()" name ="score" id="D1-11" value = "11">11</button>
+    <button class="D1-10" onclick="D1UpdateScores10()" name ="score" id="D1-10" value = "10">10</button>
+    <br>
+    <br>
+    <button class="D1-9" onclick="D1UpdateScores9()" name ="score" id="D1-9" value = "9">9</button> 
+    <button class="D1-8" onclick="D1UpdateScores8()" name ="score" id="D1-8" value = "8">8</button> 
+    <button class="D1-7" onclick="D1UpdateScores7()" name ="score" id="D1-7" value = "7">7</button> 
+    <br>
+    <br>
+    <button class="D1-6" onclick="D1UpdateScores6()" name ="score" id="D1-6" value = "6">6</button> 
+    <button class="D1-5" onclick="D1UpdateScores5()" name ="score" id="D1-5" value = "5">5</button> 
+    <button class="D1-4" onclick="D1UpdateScores4()" name ="score" id="D1-4" value = "4">4</button> 
+    <br>
+    <br>
+    <button class="D1-3" onclick="D1UpdateScores3()" name ="score" id="D1-3" value = "3">3</button> 
+    <button class="D1-2" onclick="D1UpdateScores2()" name ="score" id="D1-2" value = "2">2</button> 
+    <button class="D1-1" onclick="D1UpdateScores1()" name ="score" id="D1-1" value = "1">1</button>
+    <br>
+    <br>
+    <button class="D1-0" onclick="D1UpdateScores0()" name ="score" id="D1-0" value = "0">0</button>
+</div>
+
+<!-- Dart 2 -->
+ <div class= "Dart2" id="Dart2">
+    <p class = "D2header" id="Dart2header">Dart 2:</p>
+    <hr></hr>
+<form>
+  <input type="radio" onclick = "D2ScoreUpdate()" id="D2x1" name="D2Multiplier" value=1 checked="checked">
+  <label class="D2x1" for="D2x1">Single</label><br>
+  <input type="radio" onclick = "D2ScoreUpdate()" id="D2x2"  name="D2Multiplier" value=2>
+  <label class="D2x2" for="D2x2">Double</label><br>
+  <input type="radio" onclick = "D2ScoreUpdate()" id="D2x3"  name="D2Multiplier" value="3">
+  <label class="D2x3" for="D2x3">Triple</label><br>
+  <input type="radio" onclick = "D2ScoreUpdate()" id="D2x-1" name="D2Multiplier" value="-1">
+  <label class="D2x-1" for="D2x-1">Remove</label><br>
+
+</form>
+<br>
+    <button class="Bull2" onclick="D2UpdateScoresBull()" name ="score" id="D2-Bull" value = "25">Bull</button>
+    <button class="D2-20" onclick="D2UpdateScores20()" name ="score" id="D2-20" value = "20">20</button> 
+    <button class="D2-19" onclick="D2UpdateScores19()" name ="score" id="D2-19" value = "19">19</button> 
+    <br>
+    <br>
+    <button class="D2-18" onclick="D2UpdateScores18()" name ="score" id="D2-18" value = "18">18</button>
+    <button class="D2-17" onclick="D2UpdateScores17()" name ="score" id="D2-17" value = "17">17</button>
+    <button class="D2-16" onclick="D2UpdateScores16()" name ="score" id="D2-16" value = "16">16</button>
+    <br>
+    <br>
+    <button class="D2-15" onclick="D2UpdateScores15()" name ="score" id="D2-15" value = "15">15</button>
+    <button class="D2-14" onclick="D2UpdateScores14()" name ="score" id="D2-14" value = "14">14</button>
+    <button class="D2-13" onclick="D2UpdateScores13()" name ="score" id="D2-13" value = "13">13</button>
+    <br>
+    <br>
+    <button class="D2-12" onclick="D2UpdateScores12()" name ="score" id="D2-12" value = "12">12</button>
+    <button class="D2-11" onclick="D2UpdateScores11()" name ="score" id="D2-11" value = "11">11</button>
+    <button class="D2-10" onclick="D2UpdateScores10()" name ="score" id="D2-10" value = "10">10</button>
+    <br>
+    <br>
+    <button class="D2-9" onclick="D2UpdateScores9()" name ="score" id="D2-9" value = "9">9</button> 
+    <button class="D2-8" onclick="D2UpdateScores8()" name ="score" id="D2-8" value = "8">8</button> 
+    <button class="D2-7" onclick="D2UpdateScores7()" name ="score" id="D2-7" value = "7">7</button> 
+    <br>
+    <br>
+    <button class="D2-6" onclick="D2UpdateScores6()" name ="score" id="D2-6" value = "6">6</button> 
+    <button class="D2-5" onclick="D2UpdateScores5()" name ="score" id="D2-5" value = "5">5</button> 
+    <button class="D2-4" onclick="D2UpdateScores4()" name ="score" id="D2-4" value = "4">4</button> 
+    <br>
+    <br>
+    <button class="D2-3" onclick="D2UpdateScores3()" name ="score" id="D2-3" value = "3">3</button> 
+    <button class="D2-2" onclick="D2UpdateScores2()" name ="score" id="D2-2" value = "2">2</button> 
+    <button class="D2-1" onclick="D2UpdateScores1()" name ="score" id="D2-1" value = "1">1</button> 
+    <br>
+    <br>
+    <button class="D2-0" onclick="D2UpdateScores0()" name ="score" id="D2-0" value = "0">0</button>
+</div>
+
+<!-- Dart 3 -->
+ <div class= "Dart3" id="Dart3">
+    <p class = "D3header" id="Dart3header">Dart 3:</p>
+    <hr></hr>
+<form>
+  <input type="radio" onclick = "D3ScoreUpdate()" id="D3x1" name="D3Multiplier" value=1 checked="checked">
+  <label class="D3x1" for="D3x1">Single</label><br>
+  <input type="radio" onclick = "D3ScoreUpdate()" id="D3x2" name="D3Multiplier" value=2>
+  <label class="D3x2" for="D3x2">Double</label><br>
+  <input type="radio" onclick = "D3ScoreUpdate()" id="D3x3" name="D3Multiplier" value="3">
+  <label class="D3x3" for="D3x3">Triple</label><br>
+  <input type="radio" onclick = "D3ScoreUpdate()" id="D3x-1" name="D3Multiplier" value="-1">
+  <label class="D3x-1" for="D3x-1">Remove</label><br>
+
+
+</form>
+<br>
+    <button class="Bull3" onclick="D3UpdateScoresBull()" name ="score" id="D3-Bull" value = "25">Bull</button>
+    <button class="D3-20" onclick="D3UpdateScores20()" name ="score" id="D3-20" value = "20">20</button> 
+    <button class="D3-19" onclick="D3UpdateScores19()" name ="score" id="D3-19" value = "19">19</button> 
+    <br>
+    <br>
+    <button class="D3-18" onclick="D3UpdateScores18()" name ="score" id="D3-18" value = "18">18</button>
+    <button class="D3-17" onclick="D3UpdateScores17()" name ="score" id="D3-17" value = "17">17</button>
+    <button class="D3-16" onclick="D3UpdateScores16()" name ="score" id="D3-16" value = "16">16</button>
+    <br>
+    <br>
+    <button class="D3-15" onclick="D3UpdateScores15()" name ="score" id="D3-15" value = "15">15</button>
+    <button class="D3-14" onclick="D3UpdateScores14()" name ="score" id="D3-14" value = "14">14</button>
+    <button class="D3-13" onclick="D3UpdateScores13()" name ="score" id="D3-13" value = "13">13</button>
+    <br>
+    <br>
+    <button class="D3-12" onclick="D3UpdateScores12()" name ="score" id="D3-12" value = "12">12</button>
+    <button class="D3-11" onclick="D3UpdateScores11()" name ="score" id="D3-11" value = "11">11</button>
+    <button class="D3-10" onclick="D3UpdateScores10()" name ="score" id="D3-10" value = "10">10</button>
+    <br>
+    <br>
+    <button class="D3-9" onclick="D3UpdateScores9()" name ="score" id="D3-9" value = "9">9</button> 
+    <button class="D3-8" onclick="D3UpdateScores8()" name ="score" id="D3-8" value = "8">8</button> 
+    <button class="D3-7" onclick="D3UpdateScores7()" name ="score" id="D3-7" value = "7">7</button> 
+    <br>
+    <br>
+    <button class="D3-6" onclick="D3UpdateScores6()" name ="score" id="D3-6" value = "6">6</button> 
+    <button class="D3-5" onclick="D3UpdateScores5()" name ="score" id="D3-5" value = "5">5</button> 
+    <button class="D3-4" onclick="D3UpdateScores4()" name ="score" id="D3-4" value = "4">4</button> 
+    <br>
+    <br>
+    <button class="D3-3" onclick="D3UpdateScores3()" name ="score" id="D3-3" value = "3">3</button> 
+    <button class="D3-2" onclick="D3UpdateScores2()" name ="score" id="D3-2" value = "2">2</button> 
+    <button class="D3-1" onclick="D3UpdateScores1()" name ="score" id="D3-1" value = "1">1</button> 
+    <br>
+    <br>
+    <button class="D3-0" onclick="D3UpdateScores0()" name ="score" id="D3-0" value = "0">0</button>
+</div>
+
+<div class= "RoundScore">
+    <p id="RoundScore">Current Round Score: </p>
+    <br>
+    <button class ="Inputbuttons" name ="ScoreSubmit" onclick ="ScoreSubmit()">Submit Scores</button>
+</div>
+</div>
+<script src="/inputs.js"></script>
+</body>
+</html>
