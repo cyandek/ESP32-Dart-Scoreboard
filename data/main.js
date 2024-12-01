@@ -254,7 +254,7 @@ var debugworld = true;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~WLED
 // Variables~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const wledIP = 'http://10.0.0.86/json';
+const wledIP = 'http://IPADDRESS/json';
 const Winsetting = {
   'on': true,
   'bri': 255,
@@ -297,13 +297,6 @@ const Winsetting = {
   }]
 };
 
-const HAwebhook_lennon =
-    'http://10.0.0.7:8123/api/webhook/-YxXKia2yrcjcu1HceSbP2bPV';
-const HAwebhook_justin =
-    'http://10.0.0.7:8123/api/webhook/-YxXKia2yrcjcu1HceKGFPhgflg5g';
-const HAwebhook_adam =
-    'http://10.0.0.7:8123/api/webhook/-YxXKia2yrcjcu1HcKTbi8U';
-const HAwebhook_fog = 'http://10.0.0.7:8123/api/webhook/dart-winner-fogbaby';
 
 const solidsetting = {
   'on': true,
@@ -347,10 +340,7 @@ const solidsetting = {
   }]
 };
 
-var token =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI5MGRhMDQxNDdjNjQ0YTliOWJiMDhkZTE2ZDhiNGU5MSIsImlhdCI6MTcyMDU3MDE1MSwiZXhwIjoyMDM1OTMwMTUxfQ.ATNFykg9ksVIrBM4-B1HNOwn64BzWv3qwh4Dd_KEOD0';
-const HAgame = 'http://10.0.0.7:8123/api/states/input_boolean.';
-const HAhelper = '{\'state\': \'on\'}';
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 function UpdateGame() {
@@ -950,171 +940,6 @@ function NameUpdate() {
     console.log(Playerarr);
   }
 }
-
-/* function UpdateScoresBull() {
-  Multiplier =
-      Number(document.querySelector('input[name="Multiplier"]:checked').value);
-  inputscore = 25;
-  y = 6;              // set index for Cricketarr[x][y]
-  replaceindex = 19;  // The 19th childnode contains the symbol for this target
-
-  GetScore();
-
-  if (CurrentGame == 'Cricket' || CurrentGame == 'Cricket With Points') {
-    UpdateCricketSymbols();
-  }
-
-  document.getElementById('x1').checked = true;
-}
-
-function UpdateScores20() {
-  Multiplier =
-      Number(document.querySelector('input[name="Multiplier"]:checked').value);
-  inputscore = 20;
-  y = 0;             // set index for Cricketarr[x][y]
-  replaceindex = 0;  // The 1st childnode contains the symbol for this target
-  GetScore();
-
-  if (CurrentGame == 'Cricket' || CurrentGame == 'Cricket With Points') {
-    UpdateCricketSymbols();
-  }
-}
-
-function UpdateScores19() {
-  Multiplier =
-      Number(document.querySelector('input[name="Multiplier"]:checked').value);
-  inputscore = 19;
-  y = 1;             // set index for Cricketarr[x][y]
-  replaceindex = 1;  // The 4th childnode contains the symbol for this target
-  GetScore();
-
-  if (CurrentGame == 'Cricket' || CurrentGame == 'Cricket With Points') {
-    UpdateCricketSymbols();
-  }
-}
-
-function UpdateScores18() {
-  Multiplier =
-      Number(document.querySelector('input[name="Multiplier"]:checked').value);
-  inputscore = 18;
-  y = 2;             // set index for Cricketarr[x][y]
-  replaceindex = 4;  // The 7th childnode contains the symbol for this target
-  GetScore();
-
-
-  if (CurrentGame == 'Cricket' || CurrentGame == 'Cricket With Points') {
-    UpdateCricketSymbols();
-  }
-}
-
-function UpdateScores17() {
-  Multiplier =
-      Number(document.querySelector('input[name="Multiplier"]:checked').value);
-  inputscore = 17;
-  y = 3;              // set index for Cricketarr[x][y]
-  replaceindex = 7;  // The 10th childnode contains the symbol for this target
-  GetScore();
-
-  if (CurrentGame == 'Cricket' || CurrentGame == 'Cricket With Points') {
-    UpdateCricketSymbols();
-  }
-}
-
-function UpdateScores16() {
-  Multiplier =
-      Number(document.querySelector('input[name="Multiplier"]:checked').value);
-  inputscore = 16;
-  y = 4;              // set index for Cricketarr[x][y]
-  replaceindex = 10;  // The 13th childnode contains the symbol for this target
-  GetScore();
-
-  if (CurrentGame == 'Cricket' || CurrentGame == 'Cricket With Points') {
-    UpdateCricketSymbols();
-  }
-}
-
-function UpdateScores15() {
-  Multiplier =
-      Number(document.querySelector('input[name="Multiplier"]:checked').value);
-  inputscore = 15;
-  y = 5;              // set index for Cricketarr[x][y]
-  replaceindex = 12;  // The 16th childnode contains the symbol for this target
-
-  GetScore();
-
-  if (CurrentGame == 'Cricket' || CurrentGame == 'Cricket With Points') {
-    UpdateCricketSymbols();
-  }
-}
-
-function UpdateScores14() {
-  inputscore = 14;
-  GetScore();
-}
-
-function UpdateScores13() {
-  inputscore = 13;
-  GetScore();
-}
-
-function UpdateScores12() {
-  inputscore = 12;
-  GetScore();
-}
-
-function UpdateScores11() {
-  inputscore = 11;
-  GetScore();
-}
-
-function UpdateScores10() {
-  inputscore = 10;
-  GetScore();
-}
-
-function UpdateScores9() {
-  inputscore = 9;
-  GetScore();
-}
-
-function UpdateScores8() {
-  inputscore = 8;
-  GetScore();
-}
-
-function UpdateScores7() {
-  inputscore = 7;
-  GetScore();
-}
-
-function UpdateScores6() {
-  inputscore = 6;
-  GetScore();
-}
-
-function UpdateScores5() {
-  inputscore = 5;
-  GetScore();
-}
-function UpdateScores4() {
-  inputscore = 4;
-  GetScore();
-}
-
-function UpdateScores3() {
-  inputscore = 3;
-  GetScore();
-}
-
-function UpdateScores2() {
-  inputscore = 2;
-  GetScore();
-}
-
-function UpdateScores1() {
-  inputscore = 1;
-  GetScore();
-} */
 
 function UpdateScores() {
   D1Multiplier = Number(document.getElementById('D1Multiplier').innerHTML);
@@ -1850,43 +1675,6 @@ function GetScore() {
   document.getElementById('x1').checked = true;
 }
 
-/* function LogDarts() {
-  Multiplier =
-Number(document.querySelector('input[name="Multiplier"]:checked').value); let x
-= CurrentPlayerNum;
-
-  // Add dart number to array
-  darttracker[x][4] = darttracker[x][4] + 1;
-  let dartnum = darttracker[x][4];
-
-  // Add current dart value to array and update turn score
-  if (darttracker[x][4] > 0 && darttracker[x][4] <= 3) {
-    darttracker[x][dartnum] = inputscore * Multiplier;
-    darttracker[x][0] = darttracker[x][0] + (inputscore * Multiplier);
-  }
-
-  if (darttracker[x][4] == 3) {
-    //add score to doc
-  } else {
-    // add dart score(s) and temp score to doc
-  }
-} */
-
-/* function HAlogs() {
-
-
-  fetch(HAgame + CurrentGame, {
-    method: 'POST',
-    body: JSON.stringify(HAhelper),
-    headers: {
-      'Authorization': 'Bearer ' + token,
-      'Content-Type': 'application/json',
-    }
-  })
-      .then((response) => response.json())
-      .then((data) => console.log('Success:', data));
-} */
-
 function UpdateCricketSymbols() {
   for (let i = 0; i < 7; i++) {
     replaceindex = Cricketinputarr[1][i];
@@ -2029,19 +1817,6 @@ function Winner() {
     if (Playerstatus[z] == 2) {
       document.getElementById('CurrentGame').innerHTML =
           ('Winner: ' + Playerarr[z]);
-
-      if (Playerarr[z] == 'Lennon') {
-        console.log('Lennon won');
-        fetch(HAwebhook_lennon, {method: 'POST'});
-      }
-      if (Playerarr[z] == 'Justin') {
-        console.log('Justin won');
-        fetch(HAwebhook_justin, {method: 'POST'});
-      }
-      if (Playerarr[z] == 'Adam') {
-        console.log('Adam won');
-        fetch(HAwebhook_adam, {method: 'POST'});
-      }
     }
   }
 
@@ -2056,7 +1831,6 @@ function Winner() {
       .then((response) => response.json())
       .then((data) => console.log('Success:', data));
 
-  fetch(HAwebhook_fog, {method: 'POST'});
 
   // Globals
   var random = Math.random, cos = Math.cos, sin = Math.sin, PI = Math.PI,
