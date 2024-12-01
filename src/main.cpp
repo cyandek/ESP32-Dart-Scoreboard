@@ -14,8 +14,8 @@
 //#include <string>
 
 //Wifi credentials
-const char *SSID = "Flush Poo to St Lou";
-const char *PASSWORD = "Latin4Windy312";
+const char *SSID = "SSID";
+const char *PASSWORD = "PASSWORD";
 
 // Create AsyncWebServer object on port 80
 AsyncWebServer server(80);
